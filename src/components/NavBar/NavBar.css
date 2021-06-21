@@ -1,0 +1,23 @@
+.nav {
+  height: 80px;
+  background-color: #090909;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #eee;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: bold;
+}
