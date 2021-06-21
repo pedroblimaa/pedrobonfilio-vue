@@ -6,9 +6,10 @@
 </template>
 
 <script>
-import "./Contact.css";
-
 export default {
   name: "Contact",
 };
 </script>
+
+<style scoped src="./Contact.css">
+</style>
