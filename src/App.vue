@@ -19,7 +19,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 body{
-  margin: 0
+  margin: 0;
 }
 
 #app {
