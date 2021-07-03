@@ -1,6 +1,10 @@
 <template>
-  <div v-bind:class="{ 'transparent': isHome }" class="nav">
-    <h2 class="nav-title"><router-link v-on:click.native="isHome = true" to="/"> Pedro Bonfilio</router-link></h2>
+  <div v-bind:class="{ transparent: isHome }" class="nav">
+    <h2 class="nav-title">
+      <router-link v-on:click.native="isHome = true" to="/">
+        Pedro Bonfilio</router-link
+      >
+    </h2>
     <div class="nav-options">
       <router-link v-on:click.native="isHome = true" to="/">About</router-link>
       <router-link v-on:click.native="isHome = false" to="/works">
@@ -26,9 +30,9 @@ export default {
       default: false,
     },
   },
-  mounted: function (){
-    this.isHome = window.location.href.split('/')[3] ? false : true;
-  },
+  mounted: function () {
+    this.isHome = window.location.href.split("/")[3] ? false : true;
+  }
 };
 </script>
 

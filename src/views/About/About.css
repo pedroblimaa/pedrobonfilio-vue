@@ -11,12 +11,13 @@
 
 .main-card {
   margin: auto;
-  width: 40%;
+  width: 45%;
   font-size: 35px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
   padding: 50px 30px;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .img-block {
