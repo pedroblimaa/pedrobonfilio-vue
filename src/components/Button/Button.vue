@@ -1,5 +1,5 @@
 <template>
-  <button></button>
+  <button class="standard-btn">Send</button>
 </template>
 
 <script>

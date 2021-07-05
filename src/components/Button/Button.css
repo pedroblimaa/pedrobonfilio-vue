@@ -1,0 +1,15 @@
+.standard-btn{
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #5D9DDB, #5D9DDB, #0054a8);
+    background-size: 400%;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.standard-btn:hover{
+    background-position: 100%;
+    color: #fff;
+}

@@ -7,9 +7,9 @@
     </h2>
     <div class="nav-options">
       <router-link v-on:click.native="isHome = true" to="/">About</router-link>
-      <router-link v-on:click.native="isHome = false" to="/works">
+      <!-- <router-link v-on:click.native="isHome = false" to="/works">
         Works
-      </router-link>
+      </router-link> -->
       <router-link v-on:click.native="isHome = false" to="/contact">
         Contact
       </router-link>

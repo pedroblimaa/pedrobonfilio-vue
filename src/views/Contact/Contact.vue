@@ -32,7 +32,11 @@
           <p>Message:</p>
           <TextInput placeholder="Insert your message" />
         </div>
-        <button v-on:click="sendHello">Clique aqui</button>
+        <Button v-on:click.native="showText(true)">Clique aqui</Button>
+        <p :class="textDisplay" class="text-email">
+          Wait a little bit, the contact sending is not working yet, we're
+          working on it
+        </p>
       </div>
     </div>
   </div>
@@ -41,22 +45,29 @@
 <script>
 import Input from "@/components/Input/Input";
 import TextInput from "@/components/TextInput/TextInput";
+import Button from "@/components/Button/Button";
 // import api from "@/services/api.js";
-import api from '@/services/api'
+import api from "@/services/api";
 
 export default {
   name: "Contact",
+  data: function () {
+    return {
+      textDisplay: false,
+    };
+  },
   components: {
     Input,
     TextInput,
+    Button,
   },
   methods: {
     sendHello: async function () {
       api
         .post("/email", {
-          name: 'Pedro',
-          email: 'pedroblimaa@gmail.com',
-          text: 'Esse é um texto!!'
+          name: "Pedro",
+          email: "pedroblimaa@gmail.com",
+          text: "Esse é um texto!!",
         })
         .then((resp) => {
           let result = resp.data;
@@ -65,6 +76,11 @@ export default {
         .catch((error) => {
           console.log(error);
         });
+    },
+    showText(val) {
+      if (val) {
+        this.textDisplay = "text-email-display";
+      }
     },
   },
 };
