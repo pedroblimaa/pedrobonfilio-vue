@@ -1,0 +1,14 @@
+.text-area{
+    background-color: #3d3d3d;
+    width: 70%;
+    padding: 10px;
+    outline: 0;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    font-family: 'Lato';
+}
+
+.text-area::placeholder{
+    color: #909090;
+}
